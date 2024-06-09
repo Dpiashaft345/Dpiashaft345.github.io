@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obiective din Gorj</title>
+</head>
+<body>
+
+    <img src="template1.png" style="position: absolute; width: 15%; offset-anchor: right center; top: 0px; left: 0px;">
+
+    <img src="template1.png" style="position: absolute; width: 15%; offset-anchor: left center; top: 0px; right: 0px; -webkit-transform: scaleX(-1);transform: scaleX(-1);">
+    <img src="template2.png" style="position: absolute; width: 15%;  bottom: 0px; right: 0px;">
+    <img src="template2.png" style="position: absolute; width: 15%;  bottom: 0px; left: 0px; -webkit-transform: scaleX(-1);transform: scaleX(-1);">
+ 
+    <center>
+        <h1>Obiective de vizitat</h1>
+    </center>
+ 
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+   
+
+    <div class="container1">
+
+        <div class="panel">
+          
+            <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color:rgb(75, 41, 0); font-size: 25px;">Casa memorială<br> Constantin Brâncuși</h2>
+            <a href="casa-brancusi.html"> <img src="casa-brancusi.webp" style="width: 88%; border-radius: 5px;  height: 60%; padding: 6%; position: relative; top:-25px;"></a>
+           
+            
+                   
+        </div>
+
+
+        <div class="panel">
+
+            <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color:rgb(75, 41, 0); font-size: 25px;">Cheile Sohodolului</h2>
+            <a href="sohodol.html">
+                <img src="sohodol.webp" style="width: 88%; border-radius: 5px;  height: 60%; padding: 6%;">
+            </a>
+           
+            
+                  
+        </div>
+
+        
+        <div class="panel">
+          
+            <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color:rgb(75, 41, 0); font-size: 25px;">Muzeul de la Curtișoara</h2>
+            <a href="muzeu-curtisoara.html">
+                <img src="muzeu-curtisoara.webp" style="width: 88%; border-radius: 5px;  height: 60%; padding: 6%;">
+            </a>
+           
+            
+                   
+        </div>
+  
+
+    </div>
+
+    <br>
+  
+
+
+        <div class="container2">
+
+            <div class="panel">
+    
+                <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color:rgb(75, 41, 0); font-size: 25px;">Operele lui Brâncuși</h2>
+                 
+                <a href="operele-lui-brancusi.html"><img src="opere-brancusi.jpg" style="width: 88%; border-radius: 5px;  height: 60%; padding: 6%;">
+                </a>
+            
+                      
+            </div>
+
+            <div class="panel">
+              
+                <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color:rgb(75, 41, 0); font-size: 25px;">Transalpina</h2>
+                <a href="transalpina.html">
+                    <img src="transalpina.jpg" style="width: 88%; border-radius: 5px;  height: 60%; padding: 6%;">
+                </a>
+              
+                
+                       
+            </div>
+    
+    
+          
+    
+            
+            <div class="panel">
+              
+                <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; color:rgb(75, 41, 0); font-size: 25px;">Peștera Muierii</h2>
+                <a href="pestera-muierii.html">
+                    <img src="pestera-muierii.jpg" style="width: 88%; border-radius: 5px;  height: 60%; padding: 6%;">
+                </a>
+               
+                
+                       
+            </div>
+      
+    
+        </div>
+<br><br>
+<center>
+    <h3>Bibliografie:<a href="https://ro.wikipedia.org" target="_blank">Wikipedia</a></h3>
+</center>
+    
+
+
+</body>
+</html>
+
+<style>
+body{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(206, 206, 206)), to(rgb(254, 255, 234))) fixed;
+
+}
+
+.panel{
+
+width: 400px; 
+height: 330px; 
+background: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 253, 228)), to(rgb(252, 255, 194)));
+border: 4px;
+border-style: solid;
+border-radius: 6px;
+ border-image: linear-gradient(to top, rgb(255, 150, 13), rgb(255, 226, 192)); 
+ border-image-slice: 1; 
+ -webkit-mask: /*4*/
+     linear-gradient(#ffffff00 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
+
+}
+
+@keyframes peste {
+
+90%  {width: 440px; height: 350px;}
+100% {width: 450px; height: 360px;}
+}
+
+.panel:hover{
+
+  animation-name: peste;
+animation-duration: 0.1s;
+animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  border-color: rgb(205, 154, 92);
+
+}
+
+@media only screen and (max-width: 500px) {
+    .panel {
+    
+   
+    width: 300px; 
+    height: 350px; 
+    background-color: rgba(213, 213, 213, 0.681);   
+    border: 6px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(148, 82, 0);
+
+  }
+}
+.container1{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 3;
+    width: 1250px;
+    gap: 2%;
+    margin: 0 auto;
+
+}
+
+@media only screen and (max-width: 1500px) {
+    .container1 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 1;
+    width: 500px;
+    gap: 10px;
+    margin: 0 auto;
+   
+   
+  }
+}
+
+.container2{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-shrink: 3;
+width: 1250px;
+gap: 2%;
+margin: 0 auto;
+
+}
+
+@media only screen and (max-width: 1500px) {
+.container2 {
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex-shrink: 1;
+width: 500px;
+gap: 10px;
+margin: 0 auto;
+
+
+}
+}
+</style>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Gorjul turistic</title>
+</head>
+
+
+
+<body>
+    <img src="template1.png" style="position: absolute; width: 30%; offset-anchor: right center; top: 0px; left: 0px;">
+
+    <img src="template1.png" style="position: absolute; width: 30%; offset-anchor: left center; top: 0px; right: 0px; -webkit-transform: scaleX(-1);transform: scaleX(-1);">
+    <img src="template2.png" style="position: absolute; width: 30%;  bottom: 0px; right: 0px;">
+    <img src="template2.png" style="position: absolute; width: 30%;  bottom: 0px; left: 0px; -webkit-transform: scaleX(-1);transform: scaleX(-1);">
+
+    <center>
+        <p style="font-size: 40px;  font-weight: bold;">Gorjul turistic</p>
+        <div id="navbar">
+        
+
+           <table style="width: 100%; position: relative; top:12px;">
+
+                <tr>
+                    <td style="width: 20%;">
+                        <center> <a href="index.html"><button class="navbutton">Acasă</button></a></center>
+                       </td>
+                    <td style="width: 20%;">
+                            <center>
+                                <a href="obiective.html"><button class="navbutton">Obiective</button></a>
+                            </center>
+                      </td>
+                    <td style="width: 20%;">
+                            <center>
+                                <a href="istorie.html" ><button class="navbutton">Istorie</button></a>
+                            </center>
+                        </td>
+                    <td style="width: 20%;">
+                        <center>
+                            <a href="geografie.html" ><button class="navbutton">Geografie</button></a>
+                        </center></td>
+                    <td style="width: 20%;">
+                        <center>
+                            <a href="contact.php" target="_blank"><button class="navbutton">Contact</button></a>
+                        </center></td>
+                </tr>
+            
+           </table>
+    
+        </div>
+
+        <div id="navbar-mic" style="box-shadow: 0px 0px 10px rgb(0, 0, 0);">
+
+            <table style="width: 100%; position: relative; top:12px;">
+
+                <tr>
+                    <td style="width: 20%;">
+                        
+                        <center> <a href="index.html"><button class="navbutton">Acasă</button></a></center>
+                       </td>
+                
+             
+                 
+                </tr>
+
+                <tr>
+                    <td style="width: 20%;">
+                        <br>
+                        <center>
+                            <a href="obiective.html"><button class="navbutton">Obiective</button></a>
+                        </center>
+                  </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;">
+                        <br>
+                        <center>
+                            <a href="istorie.html" ><button class="navbutton">Istorie</button></a>
+                        </center>
+                    </td>
+                </tr>
+            
+                <tr>
+                    
+                    <td style="width: 20%;">
+                        <br>
+                        <center>
+                            <a href="geografie.html" ><button class="navbutton">Geografie</button></a>
+                        </center></td>
+                </tr>
+                
+                <tr>
+                 
+                    <td style="width: 20%;">
+                        <br>
+                        <center>
+                            <a href="contact.php" target="_blank"><button class="navbutton">Contact</button></a>
+                        </center></td>
+                </tr>
+           </table>
+            
+            </div>
+            
+        
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="harta.png" style="width: 40%;">
+    </center>
+    
+
+
+</body>
+</html>
+
+<style>
+body{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(206, 206, 206)), to(rgb(254, 255, 234))) fixed;
+
+}
+
+#navbar{
+
+    width: 50%;
+    
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(98, 98, 98)), to(rgb(0, 0, 0)));
+    height: 60px;
+    border: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(255, 231, 134);
+
+}
+
+#navbar-mic{
+
+width: 200px;
+
+background: -webkit-gradient(linear, left top, left bottom, from(rgb(98, 98, 98)), to(rgb(0, 0, 0)));
+height: 330px;
+border: 2px;
+border-radius: 5px;
+border-style: solid;
+border-color: rgb(255, 231, 134);
+
+}
+
+.navbutton{
+
+    width: 90%;
+    height: 30px;
+    background-color: transparent;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    color:white;
+}
+
+</style>
+
+
+<script>
+
+    let width = screen.width;
+    
+    
+    
+    if(width < 1500)
+    {
+        document.getElementById("navbar-mic").style.display = 'flex';
+        document.getElementById("navbar").style.display = 'none';
+    }
+    else
+    {
+        document.getElementById("navbar-mic").style.display = 'none';
+    }
+    
+    
+    
+    </script>
+    
